@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="menu">
+        <div>
+            <div>
+                <label for="totalPictures">Enter number of pictures that are of pairs (8, 10, or 12):</label>
+            </div>
+
+            <select id="totalPictures">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <div>
+            <div>Select a difficulty:</div>
+            <input type="radio" name="difficulty" value="easy" checked="checked" />
+            <label for="easy">Easy (8 sec)</label>
+            <input type="radio" name="difficulty" value="medium" />
+            <label for="medium">Medium (5 sec)</label>
+            <input type="radio" name="difficulty" value="hard" />
+            <label for="hard">Hard (3 sec)</label>
+        </div>
+        <div>
+            <input type="submit" value="Start Game" onclick="startGame()" />
+        </div>
+    </div>
+    <table class="hide"></table>
+    <div class="menu">
+        <button class="play-game hide" onclick="playGame()">Play</button>
+    </div>
+    <script src="b.js"></script>
+</body>
+
+</html>
